@@ -1,0 +1,19 @@
+{
+  "name": "octofit-backend",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "node --loader ts-node/esm src/server.ts"
+  },
+  "dependencies": {
+    "express": "^4.21.2",
+    "mongoose": "^8.11.0"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.0",
+    "@types/node": "^22.10.1",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.7.3"
+  }
+}
