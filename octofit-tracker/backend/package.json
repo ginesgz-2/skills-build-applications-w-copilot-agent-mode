@@ -4,7 +4,10 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "dev": "node --loader ts-node/esm src/server.ts"
+    "build": "tsc -p tsconfig.json",
+    "dev": "node --loader ts-node/esm src/server.ts",
+    "seed": "node --loader ts-node/esm src/scripts/seed.ts",
+    "start": "node dist/server.js"
   },
   "dependencies": {
     "express": "^4.21.2",
